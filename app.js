@@ -1,52 +1,36 @@
-// 1. length - uzunlik
-let text = 'Lorem ipsum dolor sit dolor'
-console.log(text.length);
+// TAKRORLASH OPERATORLARI
+// while
+// do
+// do while
+// for
+// for each
+// for of
 
-// 2. toUpperCase() / toLowerCase() - katta | kichik harf
-console.log(text.toUpperCase());
-console.log(text.toLowerCase());
+let num = 10;
 
-// 3. trim(), trimStart(), trimEnd() - stringdan bo'sh joylarni o'chiradi
-console.log(text.trimStart());
-console.log(text.trimEnd());
-console.log(text.trim());
+// while(num>0){
+//     console.log(num);
+//     num = num-1 // agar bu yozilmasa cheksiz qiymat beradi
+// }
 
-// 4. includes() - boolean - string tarkibida ma'lum so'zning bor-yo'qligini tekshiradi
-console.log(text.includes('dolor'));
-
-// 5. startsWith() / endsWith() -boolean - stringning ma'lum so'z bilan boshlangan yoki  ma'lum so'z bilan tugaganini tekshiradi
-console.log(text.startsWith('Lorem'));
-console.log(text.endsWith('dolor'));
-
-
-// 6. indexOf() / lastIndexOf() - 
-console.log(text.indexOf('dolor'));
-console.log(text.lastIndexOf('dolor'));
-
-// 7. slice() / substring() - stringdan ma'lum qismini qirqib olish
-console.log(text.slice(-5));
-console.log(text.substring(-5));
-
-// 8. replace() / replaceAll() - string tarkibidan ma'lum so'zni boshqa bir so'z bilan almashtirish
-console.log(text.replace('dolor', 'lorem'));
-console.log(text.replaceAll('dolor', 'lorem'));
+do {
+    console.log(num);
+    num = num-1
+} while (num>0)
 
 
-// 9. split() - srtingni bo'laklarga ajratish
-console.log(text.split(''));
+const arr = [1,2,3,4,5]
 
+// for - array elementlari va index muhim bolganda
 
-// 10. charAt() / at() - index bo'yicha harflarga ulanish
-console.log(text.at(-1));
-console.log(text.charAt(-1));
+for(let i = 0; i< arr.length; i++){
+    console.log(i) // array indexlari 
+    console.log(arr[i]) // array elementlari
+    
+}
 
-
-// 11. repeat() - stringni takrorlash
-console.log('hi'.repeat(3));
-
-
-// 12. concat() - stringlarni bir-biriga qo'shish uchun
-let text1 = 'Hello, '
-let text2 = 'World!'
-console.log(text1 + text2);
-console.log(text1.concat(text2));
+// for of - index muhim bolmaganda
+for(key of arr) {
+    console.log(key); // array elementlari
+    
+}
